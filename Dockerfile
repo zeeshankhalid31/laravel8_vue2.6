@@ -8,7 +8,7 @@ RUN apt-get update \
   && docker-php-ext-configure intl \
   && docker-php-ext-install intl pdo_mysql zip gd
 
-RUN pecl install -f xdebug && docker-php-ext-enable xdebug;
+# RUN pecl install -f xdebug && docker-php-ext-enable xdebug;
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
 
